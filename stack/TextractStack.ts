@@ -62,7 +62,7 @@ export class TextractStack extends Stack {
 
 		const jobCompletionQueue = new Queue(this, "TextractJobCompletionQueue", {
 			queueName: "textract-job-completion",
-			visibilityTimeout: Duration.seconds(30),
+			visibilityTimeout: Duration.seconds(60),
 			deadLetterQueue: {
 				queue: jobCompletionDLQ,
 				maxReceiveCount: 3,
