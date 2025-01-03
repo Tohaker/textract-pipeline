@@ -1,0 +1,49 @@
+{
+  "name": "textract-pipeline",
+  "version": "1.0.0",
+  "description": "Pipeline infrastructure and application for the AWS Textract service",
+  "type": "module",
+  "scripts": {
+    "deploy": "cdk deploy --all --require-approval never",
+    "check:types": "tsc",
+    "format": "npx @biomejs/biome format .",
+    "format:fix": "npx @biomejs/biome format --write .",
+    "lint": "npx @biomejs/biome lint .",
+    "lint:fix": "npx @biomejs/biome lint --write .",
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tohaker/textract-pipeline.git"
+  },
+  "author": "Miles Bardon",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Tohaker/textract-pipeline/issues"
+  },
+  "homepage": "https://github.com/Tohaker/textract-pipeline#readme",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@tsconfig/node22": "22.0.0",
+    "@types/aws-lambda": "8.10.146",
+    "@types/node": "22.10.1",
+    "aws-cdk": "2.171.1",
+    "aws-sdk-client-mock": "4.1.0",
+    "aws-sdk-client-mock-jest": "4.1.0",
+    "chalk": "5.3.0",
+    "typescript": "5.7.2",
+    "vitest": "2.1.6"
+  },
+  "dependencies": {
+    "@aws-lambda-powertools/batch": "2.11.0",
+    "@aws-lambda-powertools/jmespath": "2.11.0",
+    "@aws-lambda-powertools/logger": "2.11.0",
+    "@aws-sdk/client-s3": "3.701.0",
+    "@aws-sdk/client-textract": "3.699.0",
+    "amazon-textract-response-parser": "0.4.3",
+    "aws-cdk-lib": "2.171.1",
+    "aws-lambda": "1.0.7",
+    "constructs": "10.4.2",
+    "source-map-support": "0.5.21"
+  }
+}

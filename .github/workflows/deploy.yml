@@ -1,0 +1,49 @@
+name: Deploy the pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  id-token: write # This is required for requesting the JWT
+  contents: read # This is required for actions/checkout
+
+jobs:
+  test:
+    uses: ./.github/workflows/reusable-script.yml
+    with:
+      script: test
+  types:
+    uses: ./.github/workflows/reusable-script.yml
+    with:
+      script: check:types
+  lint:
+    uses: ./.github/workflows/reusable-script.yml
+    with:
+      script: lint
+  format:
+    uses: ./.github/workflows/reusable-script.yml
+    with:
+      script: format
+  deploy:
+    needs:
+      - test
+      - lint
+      - format
+      - types
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install dependencies
+        run: npm ci
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-region: ${{ vars.AWS_DEFAULT_REGION }}
+          role-to-assume: "arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/GitHubAction-AssumeRoleWithAction"
+      - name: Deploy stack
+        run: npm run deploy

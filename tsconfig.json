@@ -1,0 +1,14 @@
+{
+	"extends": "@tsconfig/node22/tsconfig.json",
+	"compilerOptions": {
+		"noEmit": true,
+		"types": [
+			"vitest/globals",
+			"aws-sdk-client-mock-jest"
+		]
+	},
+	"include": [
+		"stack/**/*.ts",
+		"functions/**/*.ts"
+	]
+}

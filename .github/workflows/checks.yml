@@ -1,0 +1,21 @@
+name: PR checks
+
+on: pull_request
+
+jobs:
+  test:
+    uses: ./.github/workflows/reusable-script.yml
+    with:
+      script: test
+  types:
+    uses: ./.github/workflows/reusable-script.yml
+    with:
+      script: check:types
+  lint:
+    uses: ./.github/workflows/reusable-script.yml
+    with:
+      script: lint
+  format:
+    uses: ./.github/workflows/reusable-script.yml
+    with:
+      script: format
