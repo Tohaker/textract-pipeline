@@ -1,6 +1,6 @@
 import path from "node:path";
 
-import { Duration, Stack, type StackProps } from "aws-cdk-lib";
+import { Duration, RemovalPolicy, Stack, type StackProps } from "aws-cdk-lib";
 import {
 	Effect,
 	PolicyStatement,
@@ -27,10 +27,14 @@ export class TextractStack extends Stack {
 
 		const inputBucket = new Bucket(this, "InputBucket", {
 			bucketName: `textract-input-${this.account}`,
+			removalPolicy: RemovalPolicy.DESTROY,
+			autoDeleteObjects: true,
 		});
 
 		const outputBucket = new Bucket(this, "OutputBucket", {
 			bucketName: `textract-output-${this.account}`,
+			removalPolicy: RemovalPolicy.DESTROY,
+			autoDeleteObjects: true,
 		});
 
 		//----------------SNS Topic----------------------//
