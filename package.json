@@ -38,7 +38,7 @@
 		"@aws-lambda-powertools/batch": "2.12.0",
 		"@aws-lambda-powertools/jmespath": "2.12.0",
 		"@aws-lambda-powertools/logger": "2.12.0",
-		"@aws-sdk/client-s3": "3.701.0",
+		"@aws-sdk/client-s3": "3.723.0",
 		"@aws-sdk/client-textract": "3.721.0",
 		"amazon-textract-response-parser": "0.4.3",
 		"aws-cdk-lib": "2.174.1",
