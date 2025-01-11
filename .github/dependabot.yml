@@ -9,3 +9,25 @@ updates:
     directory: "/"
     schedule:
       interval: daily
+    groups:
+      aws-cdk:
+        patterns:
+          - aws-cdk
+          - aws-cdk-lib
+          - constructs
+          - source-map-support
+      aws-sdk:
+        patterns:
+          - "@aws-sdk/*"
+          - amazon-textract-response-parser
+          - aws-lambda
+          - aws-sdk-client-mock
+          - aws-sdk-client-mock-jest
+      aws-powertools:
+        patterns:
+          - "@aws-lambda-powertools/*"
+      typescript:
+        patterns:
+          - "@types/*"
+          - "@tsconfig/*"
+          - typescript
