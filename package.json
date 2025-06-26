@@ -6,10 +6,10 @@
 	"scripts": {
 		"deploy": "cdk deploy --all --require-approval never",
 		"check:types": "tsc",
-		"format": "npx @biomejs/biome format .",
-		"format:fix": "npx @biomejs/biome format --write .",
-		"lint": "npx @biomejs/biome lint .",
-		"lint:fix": "npx @biomejs/biome lint --write .",
+		"format": "biome format .",
+		"format:fix": "biome format --write .",
+		"lint": "biome lint .",
+		"lint:fix": "biome lint --write .",
 		"test": "vitest"
 	},
 	"repository": {
@@ -23,7 +23,7 @@
 	},
 	"homepage": "https://github.com/Tohaker/textract-pipeline#readme",
 	"devDependencies": {
-		"@biomejs/biome": "1.9.4",
+		"@biomejs/biome": "2.0.5",
 		"@tsconfig/node22": "22.0.2",
 		"@types/aws-lambda": "8.10.150",
 		"@types/node": "24.0.4",
