@@ -35,9 +35,9 @@
 		"vitest": "3.2.4"
 	},
 	"dependencies": {
-		"@aws-lambda-powertools/batch": "2.24.1",
-		"@aws-lambda-powertools/jmespath": "2.24.1",
-		"@aws-lambda-powertools/logger": "2.24.1",
+		"@aws-lambda-powertools/batch": "2.25.1",
+		"@aws-lambda-powertools/jmespath": "2.25.1",
+		"@aws-lambda-powertools/logger": "2.25.1",
 		"@aws-sdk/client-s3": "3.864.0",
 		"@aws-sdk/client-textract": "3.864.0",
 		"amazon-textract-response-parser": "0.4.3",
