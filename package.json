@@ -41,7 +41,7 @@
 		"@aws-sdk/client-s3": "3.864.0",
 		"@aws-sdk/client-textract": "3.864.0",
 		"amazon-textract-response-parser": "0.4.3",
-		"aws-cdk-lib": "2.211.0",
+		"aws-cdk-lib": "2.212.0",
 		"aws-lambda": "1.0.7",
 		"constructs": "10.4.2",
 		"source-map-support": "0.5.21"
