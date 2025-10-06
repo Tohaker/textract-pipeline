@@ -25,8 +25,8 @@
 	"devDependencies": {
 		"@biomejs/biome": "2.2.5",
 		"@tsconfig/node22": "22.0.2",
-		"@types/aws-lambda": "8.10.153",
-		"@types/node": "24.6.2",
+		"@types/aws-lambda": "8.10.155",
+		"@types/node": "24.7.0",
 		"aws-cdk": "2.1029.4",
 		"aws-sdk-client-mock": "4.1.0",
 		"aws-sdk-client-mock-jest": "4.1.0",
