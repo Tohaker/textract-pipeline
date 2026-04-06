@@ -24,7 +24,7 @@
 	"homepage": "https://github.com/Tohaker/textract-pipeline#readme",
 	"devDependencies": {
 		"@biomejs/biome": "2.4.10",
-		"@tsconfig/node22": "22.0.5",
+		"@tsconfig/node24": "24.0.4",
 		"@types/aws-lambda": "8.10.161",
 		"@types/node": "25.5.0",
 		"aws-cdk": "2.1115.1",
