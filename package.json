@@ -27,7 +27,7 @@
 		"@tsconfig/node24": "24.0.4",
 		"@types/aws-lambda": "8.10.162",
 		"@types/node": "26.1.0",
-		"aws-cdk": "2.1128.1",
+		"aws-cdk": "2.1133.0",
 		"aws-sdk-client-mock": "4.1.0",
 		"aws-sdk-client-mock-jest": "4.1.0",
 		"chalk": "5.6.2",
@@ -41,8 +41,8 @@
 		"@aws-sdk/client-s3": "3.1077.0",
 		"@aws-sdk/client-textract": "3.1077.0",
 		"amazon-textract-response-parser": "0.4.3",
-		"aws-cdk-lib": "2.260.0",
+		"aws-cdk-lib": "2.262.1",
 		"aws-lambda": "1.0.7",
-		"constructs": "10.6.0"
+		"constructs": "10.7.1"
 	}
 }
