@@ -32,7 +32,7 @@
 		"aws-sdk-client-mock-jest": "4.1.0",
 		"chalk": "6.0.0",
 		"typescript": "6.0.3",
-		"vitest": "4.1.9"
+		"vitest": "4.1.10"
 	},
 	"dependencies": {
 		"@aws-lambda-powertools/batch": "2.33.1",
