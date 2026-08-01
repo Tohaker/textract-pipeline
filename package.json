@@ -26,12 +26,12 @@
 		"@biomejs/biome": "2.5.6",
 		"@tsconfig/node24": "24.0.4",
 		"@types/aws-lambda": "8.10.162",
-		"@types/node": "26.1.0",
+		"@types/node": "26.1.2",
 		"aws-cdk": "2.1133.0",
 		"aws-sdk-client-mock": "4.1.0",
 		"aws-sdk-client-mock-jest": "4.1.0",
 		"chalk": "6.0.0",
-		"typescript": "6.0.3",
+		"typescript": "7.0.2",
 		"vitest": "4.1.10"
 	},
 	"dependencies": {
