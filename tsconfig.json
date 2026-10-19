@@ -2,7 +2,13 @@
 	"extends": "@tsconfig/node24/tsconfig.json",
 	"compilerOptions": {
 		"noEmit": true,
-		"types": ["node", "vitest/globals", "aws-sdk-client-mock-jest"]
+		"types": [
+			"node",
+			"vitest/globals"
+		]
 	},
-	"include": ["stack/**/*.ts", "functions/**/*.ts"]
+	"include": [
+		"stack/**/*.ts",
+		"functions/**/*.ts"
+	]
 }
