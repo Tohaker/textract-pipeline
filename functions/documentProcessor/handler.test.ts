@@ -1,13 +1,11 @@
-import { mockClient } from "aws-sdk-client-mock";
-
 import { PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
 import {
 	GetDocumentTextDetectionCommand,
 	TextractClient,
 } from "@aws-sdk/client-textract";
-
 import { ApiBlockType } from "amazon-textract-response-parser";
 import type { Context, SQSRecord } from "aws-lambda";
+import { mockClient } from "aws-sdk-client-mock";
 import { handler } from "./handler.js";
 
 const context = {} as Context;
