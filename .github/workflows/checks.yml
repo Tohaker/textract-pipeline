@@ -11,11 +11,7 @@ jobs:
     uses: ./.github/workflows/reusable-script.yml
     with:
       script: check:types
-  lint:
+  check:
     uses: ./.github/workflows/reusable-script.yml
     with:
-      script: lint
-  format:
-    uses: ./.github/workflows/reusable-script.yml
-    with:
-      script: format
+      script: check
